@@ -12,7 +12,9 @@ function App() {
       <Header />
       <main className="max-width">
         <VideoElementList />
-        <h1>Saved results: {2}</h1>
+        <h2>
+          Saved results: <span> {2} </span>
+        </h2>
         <VideoElementList />
       </main>
     </div>

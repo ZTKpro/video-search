@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+@import "./colors.scss";
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -14,4 +16,8 @@ h3 {
 
 p {
   font-size: 1em;
+}
+
+span {
+  color: $base-color;
 }
