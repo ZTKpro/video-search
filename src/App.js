@@ -12,16 +12,16 @@ import VideoElementList from "./components/VideoElementList/VideoElementList.tsx
 function App({ movies, getAllMovies }) {
   useEffect(() => {
     getAllMovies();
-  });
+  }, []);
   return (
     <div className="App">
       <Header />
       <main className="max-width">
-        <VideoElementList />
+        <VideoElementList {...movies} />
         <h2>
           Saved results: <span> {movies.list.slice(0, 10).length} </span>
         </h2>
-        <VideoElementList />
+        {/* <VideoElementList /> */}
       </main>
     </div>
   );
